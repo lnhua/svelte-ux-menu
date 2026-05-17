@@ -1,2 +1,4 @@
 allowBuilds:
-  esbuild: true
+  svelte-preprocess: set this to true or false
+packages:
+  - '.'
