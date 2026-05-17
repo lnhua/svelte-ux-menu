@@ -39,4 +39,15 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Deploying to Cloudflare Pages
+
+This project is configured for Cloudflare Pages with `@sveltejs/adapter-cloudflare`.
+
+Use these settings when connecting the repository in Cloudflare Pages:
+
+```sh
+Build command: pnpm run build
+Build output directory: .svelte-kit/cloudflare
+```
+
+The same output directory is also declared in `wrangler.toml` with `pages_build_output_dir`.

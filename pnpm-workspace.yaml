@@ -1,4 +1,7 @@
 allowBuilds:
-  svelte-preprocess: set this to true or false
+  esbuild: true
+  sharp: true
+  svelte-preprocess: true
+  workerd: true
 packages:
   - '.'
