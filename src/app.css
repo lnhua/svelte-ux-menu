@@ -1,3 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@source '../node_modules/svelte-ux/dist/**/*.{svelte,js}';
+
+@import '@layerstack/tailwind/core.css';
+@import '@layerstack/tailwind/utils.css';
+
+:root {
+	color-scheme: light;
+	--color-primary: #f97316;
+	--color-primary-content: #ffffff;
+	--color-secondary: #3b82f6;
+	--color-surface-100: #ffffff;
+	--color-surface-200: #f3f4f6;
+	--color-surface-300: #d1d5db;
+	--color-surface-content: #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+		--color-primary: #f97316;
+		--color-primary-content: #ffffff;
+		--color-secondary: #3b82f6;
+		--color-surface-100: #27272a;
+		--color-surface-200: #18181b;
+		--color-surface-300: #09090b;
+		--color-surface-content: #f4f4f5;
+	}
+}
+
+[data-theme='light'] {
+	color-scheme: light;
+	--color-primary: #f97316;
+	--color-primary-content: #ffffff;
+	--color-secondary: #3b82f6;
+	--color-surface-100: #ffffff;
+	--color-surface-200: #f3f4f6;
+	--color-surface-300: #d1d5db;
+	--color-surface-content: #111827;
+}
+
+[data-theme='dark'] {
+	color-scheme: dark;
+	--color-primary: #f97316;
+	--color-primary-content: #ffffff;
+	--color-secondary: #3b82f6;
+	--color-surface-100: #27272a;
+	--color-surface-200: #18181b;
+	--color-surface-300: #09090b;
+	--color-surface-content: #f4f4f5;
+}
